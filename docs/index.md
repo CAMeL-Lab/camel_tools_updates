@@ -9,7 +9,7 @@ This page will have the latest updates on the different components from [CAMeL T
 <ul class="post-list">
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.date | date: "%-d %B %Y" }} - {{ post.title }}</a>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: "%-d %B %Y" }} - {{ post.title }}</a>
     </li>
   {% endfor %}
 </ul>
